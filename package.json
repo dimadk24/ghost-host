@@ -1,0 +1,27 @@
+{
+  "name": "ghost-host",
+  "version": "1.0.0",
+  "description": "awesome markup",
+  "main": "index.html",
+  "scripts": {
+    "stylelint": "stylelint \"./src/*\"",
+    "deploy": "gh-pages -d src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaDK24/ghost-host.git"
+  },
+  "author": "DimaDK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaDK24/ghost-host/issues"
+  },
+  "homepage": "https://github.com/DimaDK24/ghost-host#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "stylelint": "^9.7.0",
+    "stylelint-config-recommended": "^2.1.0"
+  },
+  "dependencies": {}
+}
