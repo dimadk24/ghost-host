@@ -222,4 +222,8 @@ body.menu--opened ul {
   .nav__item > a {
     width: 50%;
   }
+
+  .logo > img {
+    margin-top: 10px;
+  }
 }
