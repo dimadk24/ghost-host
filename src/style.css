@@ -213,6 +213,7 @@ body.menu--opened ul {
 
   .nav__item--active {
     border: none;
+    background-color: #374080;
   }
 
   .burger {
