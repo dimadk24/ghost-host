@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Lato";
   src: url("fonts/lato/Lato-Medium.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/lato/Lato-Bold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
@@ -168,6 +175,55 @@ body.menu--opened ul {
   margin: 0 20px;
 }
 
+.member {
+  background-color: #39d083;
+  position: relative;
+  top: -17px;
+}
+
+.member > div {
+  display: inline-flex;
+  justify-content: center;
+  width: 48.8125%;
+  height: 122px;
+}
+
+.member button {
+  display: block;
+  width: 75%;
+  height: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.35em;
+}
+
+div.login {
+  position: relative;
+  background-color: #203747;
+}
+
+div.login::after {
+  content: "";
+  background-color: inherit;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: -15px;
+  transform: skew(-12deg);
+}
+
+div.login > button {
+  margin-left: 29%;
+}
+
+div.register > button {
+  margin-right: 18.69%;
+}
+
 @media screen and (max-width: 1400px) {
   .top {
     height: 50px;
@@ -188,17 +244,37 @@ body.menu--opened ul {
   header {
     height: 650px;
   }
+
+  .member > div {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 1240px) {
   .top {
     margin: 0 20px;
   }
+
+  .member > div {
+    height: 60px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   header {
     height: 550px;
+  }
+
+  .member > div {
+    height: 50px;
+  }
+
+  div.login > button {
+    margin-left: 0;
+  }
+  
+  div.register > button {
+    margin-right: 0;
   }
 }
 
