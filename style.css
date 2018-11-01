@@ -7,12 +7,30 @@
 @font-face {
   font-family: "Lato";
   src: url("fonts/Lato/Lato-Bold.ttf");
-  font-weight: bold;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Semibold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato/Lato-Heavy.ttf");
+  font-weight: 800;
 }
 
 @font-face {
   font-family: "Myriad Pro";
   src: url("fonts/Myriad Pro/MyriadPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-UltraLight.ttf");
+  font-weight: lighter;
 }
 
 @keyframes menu {
@@ -31,9 +49,13 @@
 
 * {
   box-sizing: border-box;
-  color: white;
   margin: 0;
   padding: 0;
+}
+
+header *,
+.member * {
+  color: white;
 }
 
 .container {
@@ -197,7 +219,7 @@ body.menu--opened ul {
   background: none;
   border: none;
   font-family: "Lato", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.35em;
 }
 
@@ -224,6 +246,90 @@ div.register > button {
   margin-right: 18.69%;
 }
 
+.domain > h3,
+.domain > p {
+  text-align: center;
+}
+
+.domain > h3 {
+  margin: 67px auto 23px;
+  max-width: 80%;
+  font-size: 23px;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 800;
+  transform: scaleX(1.04);
+}
+
+.domain > p {
+  font-size: 16px;
+  margin: 0 30px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.domain_label {
+  display: none;
+}
+
+.domain__select {
+  display: flex;
+  align-items: center;
+  width: 55.5%;
+  min-width: 300px;
+  height: 50px;
+  margin: 50px auto 100px;
+  border: 1px solid grey;
+  padding: 9px 0;
+}
+
+span.www {
+  padding: 0 15px;
+}
+
+.domain__select > input {
+  border: none;
+  outline: none;
+  padding: 7px 15px 11px;;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  width: 100%;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.domain__select > select {
+  margin: 5px;
+  width: 53px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  color: red;
+}
+
+.domain__select > .www,
+.domain__select > select {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: #cbcbcb;
+}
+
+.domain__select > select {
+  margin: 0 4px 5px 18px;
+  width: 63px;
+  background: none;
+}
+
+.domain__select .down-icon {
+  position: relative;
+  left: -3.39%;
+  z-index: -1;
+  color: #cbcbcb;
+}
+
 @media screen and (max-width: 1400px) {
   .top {
     height: 50px;
@@ -247,6 +353,10 @@ div.register > button {
 
   .member > div {
     height: 80px;
+  }
+
+  .domain > h3 {
+    margin: 40px auto 20px;
   }
 }
 
@@ -272,9 +382,13 @@ div.register > button {
   div.login > button {
     margin-left: 0;
   }
-  
+
   div.register > button {
     margin-right: 0;
+  }
+
+  .domain > h3 {
+    margin: 20px auto 15px;
   }
 }
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Ghost Host</title>
   <link rel="stylesheet" href="lib/hamburgers.css">
+  <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
@@ -46,6 +47,21 @@
       </div>
       <div class="register">
         <button>register</button>
+      </div>
+    </div>
+    <div class="domain">
+      <h3>Would you like to buy a new domain ?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id
+        molestier.</p>
+      <div class="domain__select">
+        <span class="www">www.</span>
+        <label for="domain_input" class="domain_label">Choose domain</label>
+        <input placeholder="What do you want?" name="domain" id="domain_input" autocomplete="off">
+        <select name="domain_zone">
+          <option value="com">.com</option>
+          <option value="net">.net</option>
+        </select>
+        <span class="down-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
       </div>
     </div>
   </div>
