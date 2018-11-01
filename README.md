@@ -1,4 +1,4 @@
-# Ghost Host website
-Specially for Rolling Scopes School
+# Ghost Host
+Rolling scopes school markup-2018q3
 
-Have a look: [Ghost Host](https://dimadk24.github.io/ghost-host/)
+Have a look at: [Ghost Host](https://dimadk24.github.io/ghost-host/)
