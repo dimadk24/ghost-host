@@ -272,10 +272,11 @@ div.register > button {
 }
 
 .domain__select {
+  position: relative;
   display: flex;
   align-items: center;
   width: 55.5%;
-  min-width: 300px;
+  min-width: 320px;
   height: 50px;
   margin: 50px auto 100px;
   border: 1px solid grey;
@@ -289,44 +290,47 @@ span.www {
 .domain__select > input {
   border: none;
   outline: none;
-  padding: 7px 15px 11px;;
+  padding: 7px 15px 11px;
   border-right: 1px solid grey;
   border-left: 1px solid grey;
-  width: 100%;
+  width: 82.5%;
   font-family: "Lato", Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
 }
 
-.domain__select > select {
-  margin: 5px;
-  width: 53px;
+.select-wrapper {
+  position: relative;
+  margin: 0 4px 5px 18px;
+}
+
+.domain__select > .select-wrapper::after {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f107";
+  pointer-events: none;
+}
+
+.select-wrapper > select {
   height: 25px;
+  width: 63px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: none;
-  color: red;
 }
 
 .domain__select > .www,
-.domain__select > select {
+.domain__select * {
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
-  margin-bottom: 3px;
-  color: #cbcbcb;
-}
-
-.domain__select > select {
-  margin: 0 4px 5px 18px;
-  width: 63px;
-  background: none;
-}
-
-.domain__select .down-icon {
-  position: relative;
-  left: -1.39%;
-  z-index: -1;
   color: #cbcbcb;
 }
 
