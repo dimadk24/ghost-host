@@ -53,6 +53,13 @@
   padding: 0;
 }
 
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
 header *,
 .member * {
   color: white;
@@ -128,13 +135,6 @@ nav > ul {
 
 .nav__item--active {
   border-bottom: 1px solid white;
-}
-
-a,
-a:hover,
-a:visited,
-a:active {
-  text-decoration: none;
 }
 
 h1 {
@@ -310,6 +310,7 @@ span.www {
   right: 10px;
   top: 5px;
   display: inline-block;
+  /* stylelint-disable */
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
