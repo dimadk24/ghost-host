@@ -373,6 +373,10 @@ span.www {
   border-bottom: 1px solid #cbcbcb;
 }
 
+.domain__table td:first-child {
+  text-transform: uppercase;
+}
+
 .domain__table tr:nth-child(2) > td::after {
   border: none;
 }
