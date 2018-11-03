@@ -327,6 +327,7 @@ span.www {
   -moz-appearance: none;
   appearance: none;
   border: none;
+  background-color: white;
 }
 
 .domain__select > .www,
