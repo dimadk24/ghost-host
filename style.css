@@ -327,6 +327,7 @@ span.www {
   -moz-appearance: none;
   appearance: none;
   border: none;
+  background-color: white;
 }
 
 .domain__select > .www,
@@ -344,10 +345,6 @@ span.www {
   border: 1px solid #cbcbcb;
 }
 
-.domain__table td:first-child {
-  text-transform: uppercase;
-}
-
 .domain__table td {
   position: relative;
   width: 25%;
@@ -357,26 +354,30 @@ span.www {
   font-family: "Lato", Arial, sans-serif;
 }
 
+.domain__table td:first-child {
+  text-transform: uppercase;
+}
+
+
 .domain__table td::before {
   content: "";
-  height: 74px;
+  height: 80%;
   position: absolute;
   left: 0;
-  top: 12px; /* 15 */
+  top: 12px;
   z-index: -1;
   border-left: 1px solid #cbcbcb;
 }
 
 .domain__table td::after {
   content: "";
-  width: 209px;
+  width: 95.5%;
   position: absolute;
-  left: 6px;
+  left: 2.74%;
   bottom: 0;
   z-index: -1;
   border-bottom: 1px solid #cbcbcb;
 }
-/* TODO: fix first and last children border width. Watch out design */
 
 .domain__table tr:last-child > td::after {
   border: none;
@@ -386,21 +387,21 @@ span.www {
   border: none;
 }
 
-.domain_table td:first-child::after {
-  left: 25px;
+.domain__table td:first-child::after {
+  width: 87%;
+  left: 11.42%;
 }
 
-.domain_table td:last-child::after {
-
+.domain__table td:last-child::after {
+  width: 87%;
 }
 
-.domain_table tr:first-child > td::before {
-   top: 15px;
+.domain__table tr:first-child > td::before {
+   top: 16.13%;
 }
 
-.domain_table tr:first-child td::before {
- top: unset;
-  bottom: 15px;
+.domain__table tr:last-child > td::before {
+  top: 2.7%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -466,7 +467,7 @@ span.www {
 }
 
 @media screen and (max-width: 640px) {
-  .domain_table td {
+  .domain__table td {
     width: unset;
   }
 }
@@ -500,6 +501,6 @@ span.www {
 
 @media screen and (max-width: 400px) {
   .domain__table > table {
-    width: unset;
+    width: 95%;
   }
 }
