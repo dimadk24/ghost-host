@@ -354,36 +354,54 @@ span.www {
   font-family: "Lato", Arial, sans-serif;
 }
 
+.domain__table td:first-child {
+  text-transform: uppercase;
+}
+
+
 .domain__table td::before {
   content: "";
   height: 80%;
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 12px;
   z-index: -1;
   border-left: 1px solid #cbcbcb;
 }
 
 .domain__table td::after {
   content: "";
-  width: 80%;
+  width: 95.5%;
   position: absolute;
-  left: 10%;
+  left: 2.74%;
   bottom: 0;
   z-index: -1;
   border-bottom: 1px solid #cbcbcb;
 }
 
-.domain__table td:first-child {
-  text-transform: uppercase;
-}
-
-.domain__table tr:nth-child(2) > td::after {
+.domain__table tr:last-child > td::after {
   border: none;
 }
 
 .domain__table td:first-child::before {
   border: none;
+}
+
+.domain__table td:first-child::after {
+  width: 87%;
+  left: 11.42%;
+}
+
+.domain__table td:last-child::after {
+  width: 87%;
+}
+
+.domain__table tr:first-child > td::before {
+   top: 16.13%;
+}
+
+.domain__table tr:last-child > td::before {
+  top: 2.7%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -449,7 +467,7 @@ span.www {
 }
 
 @media screen and (max-width: 640px) {
-  .domain_table td {
+  .domain__table td {
     width: unset;
   }
 }
@@ -483,6 +501,6 @@ span.www {
 
 @media screen and (max-width: 400px) {
   .domain__table > table {
-    width: unset;
+    width: 95%;
   }
 }
