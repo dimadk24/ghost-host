@@ -547,49 +547,49 @@ span.www {
     color: #18bb9c;
 }
 
-.package__cta {
+.package__action {
     width: 70%;
     margin: 0 auto;
     padding: 0 12px;
     font-family: "Lato", Arial, sans-serif;
 }
 
-.package__cta__price__value {
+.package__action__price__value {
     font-size: 2em;
     font-weight: bold;
 }
 
-.package__cta__price:first-letter {
+.package__action__price:first-letter {
     vertical-align: super;
     font-size: 0.5em;
 }
 
-.package__cta__price__time {
+.package__action__price__time {
     color: grey;
 }
 
-.package__cta__price {
+.package__action__price {
     border-bottom-width: 3px;
     border-bottom-style: solid;
 }
 
-.package.dark-yellow .package__cta__price {
+.package.dark-yellow .package__action__price {
     border-color: #fcd224;
 }
 
-.package.grey .package__cta__price {
+.package.grey .package__action__price {
     border-color: #7e8c8d;
 }
 
-.package.red .package__cta__price {
+.package.red .package__action__price {
     border-color: #f6603d;
 }
 
-.package.turquoise .package__cta__price {
+.package.turquoise .package__action__price {
     border-color: #18bb9c;
 }
 
-.package__cta > button {
+.package__action > button {
     width: 100%;
     margin-top: 20px;
     text-transform: uppercase;
