@@ -83,12 +83,6 @@ header *,
     color: white;
 }
 
-.container {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 header {
     background-image: linear-gradient(
             to right,
@@ -98,6 +92,7 @@ header {
         url("images/Header BG.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     height: 961px;
 }
 
@@ -425,6 +420,8 @@ span.www {
     margin-bottom: 85px;
     background: url("images/Packages Photo.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
 }
 
 .packages__inner {
@@ -735,6 +732,10 @@ span.www {
 
     .about {
         padding-top: 70px;
+    }
+
+    .packages {
+        background-size: auto;
     }
 }
 
