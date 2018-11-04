@@ -1150,6 +1150,11 @@ footer a {
         height: 120px;
     }
 
+    .footer__bottom__nav li {
+        margin-right: 0;
+        width: 51%;
+    }
+
     .footer__contacts {
         flex-basis: 100%;
         padding-left: 0;
