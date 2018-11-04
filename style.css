@@ -351,7 +351,7 @@ span.www {
     width: 80%;
     height: 194px;
     max-width: 888px;
-    margin: 37px auto 100px;
+    margin: 37px auto 94px;
     border: 1px solid #cbcbcb;
 }
 
@@ -414,7 +414,7 @@ span.www {
 }
 
 .packages {
-    margin-bottom: 85px;
+    margin-bottom: 101px;
     background: url("images/Packages Photo.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -422,17 +422,16 @@ span.www {
 }
 
 .packages__inner {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .package {
-    width: 200px;
-    margin: 0 30px 20px 0;
+    flex-basis: 21.5%;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 16px -1px #9a9a9a;
@@ -461,14 +460,20 @@ span.www {
 }
 
 .package__coolness {
-    height: 145px;
+    height: 72px;
     width: 80%;
-    margin: 0 auto;
+    margin: 13px auto 0;
+    display: flex;
+    justify-content: center;
 }
 
 .circle,
 .circle::after {
     background-color: transparent;
+}
+
+.circle.small {
+    font-size: 55px;
 }
 
 .package.dark-yellow .circle > span {
@@ -515,8 +520,8 @@ span.www {
 }
 
 .package__description {
-    margin: 20px 0;
-    padding: 10px 0;
+    margin: 18px 0;
+    padding: 0 8px;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 }
@@ -524,7 +529,7 @@ span.www {
 .package__description__item {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 18px;
     font-family: "Lato", Arial, sans-serif;
     font-weight: 300;
 }
@@ -555,8 +560,8 @@ span.www {
 
 .package__action {
     width: 70%;
-    margin: 0 auto;
-    padding: 0 12px;
+    margin: 46px auto 10px;
+    padding: 0 21px;
     font-family: "Lato", Arial, sans-serif;
 }
 
@@ -577,6 +582,7 @@ span.www {
 .package__action__price {
     border-bottom-width: 3px;
     border-bottom-style: solid;
+    text-align: center;
 }
 
 .package.dark-yellow .package__action__price {
@@ -882,13 +888,27 @@ footer {
     flex-wrap: wrap;
     height: 50%;
     width: 63%;
-    margin: 24px auto 0;
+    margin: 26px auto 0;
     list-style: none;
 }
 
 .footer__bottom__nav li {
     margin: 0 5px 12px 0;
     text-transform: capitalize;
+    width: 63%;
+}
+
+footer a {
+    transition-duration: 200ms;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer__bottom__nav a:hover {
+    padding-left: 5px;
+    width: 80%;
 }
 
 .footer__bottom__nav li::before {
@@ -986,6 +1006,10 @@ footer a {
         background-size: auto;
     }
 
+    .packages__inner {
+        width: 90%;
+    }
+
     .functions {
         margin-top: 70px;
     }
@@ -1016,6 +1040,15 @@ footer a {
 
     .domain > h3 {
         margin: 20px auto 15px;
+    }
+
+    .packages__inner {
+        width: 60%;
+    }
+
+    .package {
+        flex-basis: 43.5%;
+        margin-bottom: 20px;
     }
 
     .about {
@@ -1062,6 +1095,14 @@ footer a {
 }
 
 @media screen and (max-width: 800px) {
+    .packages__inner {
+        width: 50%;
+    }
+
+    .package {
+        flex-basis: 100%;
+    }
+
     .functions {
         margin-top: 30px;
     }
@@ -1136,6 +1177,11 @@ footer a {
         height: 120px;
     }
 
+    .footer__bottom__nav li {
+        margin-right: 0;
+        width: 51%;
+    }
+
     .footer__contacts {
         flex-basis: 100%;
         padding-left: 0;
@@ -1158,6 +1204,10 @@ footer a {
 }
 
 @media screen and (max-width: 499px) {
+    .packages__inner {
+        width: 85%;
+    }
+
     .package {
         margin-right: 0;
     }
