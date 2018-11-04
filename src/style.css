@@ -831,6 +831,18 @@ span.www {
 }
 
 @media screen and (max-width: 400px) {
+    .domain__select {
+        min-width: 250px;
+    }
+
+    .domain__select > .www {
+        display: none;
+    }
+
+    .domain__select > input {
+        border-left: none;
+    }
+
     .domain__table > table {
         width: 95%;
     }
@@ -846,5 +858,9 @@ span.www {
     .person__photo > img {
         width: 75px;
         height: auto;
+    }
+
+    .about__team {
+        min-width: 270px;
     }
 }
