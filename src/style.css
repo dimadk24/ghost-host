@@ -672,7 +672,6 @@ span.www {
     color: #1f89ba;
 }
 
-
 .person__name,
 .person__job {
     text-align: center;
@@ -705,11 +704,11 @@ blockquote {
 }
 
 blockquote::before {
-    content: '“';
+    content: "“";
 }
 
 blockquote::after {
-    content: '”';
+    content: "”";
 }
 
 .comment__bottom {
