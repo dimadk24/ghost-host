@@ -18,6 +18,12 @@
 
 @font-face {
     font-family: "Lato";
+    src: url("fonts/Lato/Lato-Black.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Lato";
     src: url("fonts/Lato/Lato-Bold.ttf");
     font-weight: 600;
 }
@@ -32,12 +38,6 @@
     font-family: "Lato";
     src: url("fonts/Lato/Lato-Heavy.ttf");
     font-weight: 800;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("fonts/Lato/Lato-Black.ttf");
-    font-weight: 500;
 }
 
 @font-face {
@@ -285,6 +285,7 @@ div.register > button {
     display: flex;
     align-items: center;
     width: 55.5%;
+    max-width: 1000px;
     min-width: 320px;
     height: 50px;
     margin: 50px auto 0;
@@ -746,6 +747,63 @@ blockquote::after {
     background-color: white;
 }
 
+.functions {
+    width: 81.5%;
+    margin: 100px auto 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.function {
+    flex-basis: 25%;
+}
+
+.function__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: white;
+    font-size: 2em;
+}
+
+.function__icon--yellow {
+    background-color: #f1c40f;
+}
+
+.function__icon--blue {
+    background-color: #0faff1;
+}
+
+.function__icon--grey {
+    background-color: #95a5a6;
+}
+
+.function__icon--red {
+    background-color: #f1540f;
+}
+
+.function__title {
+    margin: 20px 0 6px;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: center;
+}
+
+.function__description {
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1400px) {
     .top {
         height: 50px;
@@ -778,6 +836,15 @@ blockquote::after {
     .about {
         padding-top: 80px;
     }
+
+    .functions {
+        width: 85%;
+        margin-top: 80px;
+    }
+
+    .function__description {
+        max-width: 180px;
+    }
 }
 
 @media screen and (max-width: 1240px) {
@@ -795,6 +862,10 @@ blockquote::after {
 
     .packages {
         background-size: auto;
+    }
+
+    .functions {
+        margin-top: 70px;
     }
 }
 
@@ -839,6 +910,21 @@ blockquote::after {
         flex-basis: 100%;
         min-width: 300px;
     }
+
+    .functions {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .functions {
+        margin-top: 30px;
+    }
+
+    .function {
+        flex-basis: 50%;
+        padding-top: 35px;
+    }
 }
 
 @media screen and (min-width: 537px) and (max-width: 824px) {
@@ -880,6 +966,10 @@ blockquote::after {
     }
 
     .about {
+        width: 90%;
+    }
+
+    .functions {
         width: 90%;
     }
 }
@@ -926,5 +1016,18 @@ blockquote::after {
 
     .about__team {
         min-width: 270px;
+    }
+
+    .functions {
+        margin-top: 10px;
+    }
+
+    .function {
+        flex-basis: 100%;
+        padding-top: 40px;
+    }
+
+    .function__description {
+        max-width: 100%;
     }
 }
