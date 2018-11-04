@@ -1,5 +1,11 @@
 @font-face {
     font-family: "Lato";
+    src: url("fonts/Lato/Lato-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Lato";
     src: url("fonts/Lato/Lato-Medium.ttf");
     font-weight: normal;
 }
@@ -403,6 +409,197 @@ span.www {
     top: 2.7%;
 }
 
+.packages {
+    margin-bottom: 100px;
+    background: url("images/Packages Photo.png");
+    background-repeat: no-repeat;
+}
+
+.packages__inner {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.package {
+    width: 200px;
+    margin: 0 30px 20px 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 16px -1px #9a9a9a;
+    border-top-width: 5px;
+    border-top-style: solid;
+}
+
+.package.dark-yellow {
+    border-color: #fcd224;
+}
+
+.package.grey {
+    border-color: #7e8c8d;
+}
+
+.package.red {
+    border-color: #f6603d;
+}
+
+.package.turquoise {
+    border-color: #18bb9c;
+}
+
+.package:last-child {
+    margin-right: 0;
+}
+
+.package__coolness {
+    height: 145px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.circle,
+.circle::after {
+    background-color: transparent;
+}
+
+.package.dark-yellow .circle > span {
+    color: #fcd224;
+}
+
+.package.grey .circle > span {
+    color: #7e8c8d;
+}
+
+.package.red .circle > span {
+    color: #f6603d;
+}
+
+.package.turquoise .circle > span {
+    color: #18bb9c;
+}
+
+.package.dark-yellow .c100 .bar,
+.package.dark-yellow .c100 .fill {
+    border-color: #fcd224 !important;
+}
+
+.package.grey .c100 .bar,
+.package.grey .c100 .fill {
+    border-color: #7e8c8d !important;
+}
+
+.package.red .c100 .bar,
+.package.red .c100 .fill {
+    border-color: #f6603d !important;
+}
+
+.package.turquoise .c100 .bar,
+.package.turquoise .c100 .fill {
+    border-color: #18bb9c !important;
+}
+
+.package__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.package__description {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.package__description__item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: "Lato", Arial, sans-serif;
+    font-weight: 300;
+}
+
+.package__description__title {
+    color: grey;
+}
+
+.package__description__value {
+    font-weight: bold;
+}
+
+.package.dark-yellow .package__description__value {
+    color: #fcd224;
+}
+
+.package.grey .package__description__value {
+    color: #7e8c8d;
+}
+
+.package.red .package__description__value {
+    color: #f6603d;
+}
+
+.package.turquoise .package__description__value {
+    color: #18bb9c;
+}
+
+.package__cta {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 12px;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+.package__cta__price__value {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.package__cta__price:first-letter {
+    vertical-align: super;
+    font-size: 0.5em;
+}
+
+.package__cta__price__time {
+    color: grey;
+}
+
+.package__cta__price {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.package.dark-yellow .package__cta__price {
+    border-color: #fcd224;
+}
+
+.package.grey .package__cta__price {
+    border-color: #7e8c8d;
+}
+
+.package.red .package__cta__price {
+    border-color: #f6603d;
+}
+
+.package.turquoise .package__cta__price {
+    border-color: #18bb9c;
+}
+
+.package__cta > button {
+    width: 100%;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1400px) {
     .top {
         height: 50px;
@@ -443,6 +640,12 @@ span.www {
     }
 }
 
+@media screen and (min-width: 824px) and (max-width: 1074px) {
+    .package:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     header {
         height: 550px;
@@ -462,6 +665,12 @@ span.www {
 
     .domain > h3 {
         margin: 20px auto 15px;
+    }
+}
+
+@media screen and (min-width: 537px) and (max-width: 824px) {
+    .package:nth-child(2) {
+        margin-right: 0;
     }
 }
 
@@ -495,6 +704,12 @@ span.www {
 
     .logo > img {
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .package {
+        margin-right: 0;
     }
 }
 
