@@ -184,7 +184,7 @@ body.menu--opened nav {
     display: block;
 }
 
-body.menu--opened ul {
+body.menu--opened .top__nav {
     position: absolute;
     top: 0;
     left: 0;
